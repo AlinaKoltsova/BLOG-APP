@@ -27,7 +27,7 @@ function getPostFromUser () {
     return {
 
         title: title,
-        desc: desc,
+        desc: desc
     };
 }
 
