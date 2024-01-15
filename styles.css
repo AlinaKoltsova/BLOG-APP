@@ -12,3 +12,9 @@
     height: 30px;
     box-sizing: border-box;
 }
+
+.row {
+
+    display: flex;
+    gap: 50px;
+}
