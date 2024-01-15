@@ -6,6 +6,14 @@
     width: 300px;
 }
 
+.desc-input {
+
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
 .publication-btn {
 
     width: 300px;
