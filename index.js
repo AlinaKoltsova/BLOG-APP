@@ -19,8 +19,9 @@ publicationBtnNode.addEventListener ('click', function () {
 
     renderPosts();
 
-    document.getElementById("userDescInput").value = "";
     document.getElementById("userTitleInput").value = "";
+    document.getElementById("userDescInput").value = "";
+    publicationBtnNode.disabled = true;
     
 });
 
