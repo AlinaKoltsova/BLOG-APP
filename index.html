@@ -19,19 +19,36 @@
                 <input 
                 class ="js-title-input title-input" 
                 type="text"
-                placeholder="Заголовок">
+                placeholder="Заголовок"
+                id="userTitleInput"
+                oninput="countCharacters()">
 
-                <input 
+                <p>Количество символов: <span id="charTitleCount">0</span></p>
+
+                <textarea  
                 class = "js-desc-input desc-input" 
                 type="text"
-                placeholder="Текст">
+                placeholder="Описание"
+                id="userDescInput"
+                oninput="countCharacters()"></textarea>
+
+                <p>Количество символов: <span id="charDescCount">0</span></p>
+                
                                 
                 <button class = "js-publication-btn publication-btn">
                     Опубликовать
                 </button>
 
+                <div 
+                
+                id = "validationMessage" 
+                class = "validationMessage validationMessage_hidden">
+            
+                </div>
+
         </div>
 
+        
         <div class ="col">
 
             <div class ="posts-section">
@@ -46,6 +63,8 @@
 
             </div>
         </div>
+
+        
 
     </div>
     
