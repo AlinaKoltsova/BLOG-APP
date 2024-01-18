@@ -3,68 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=he, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <h1>Мой блог</h1>
-    
-    <div class ="row">
+   <div class="container">
 
-        <div class ="col">
+        <h1 class="posts__mainTitle"> Мой блог</h1>
+        
+            <div class ="posts__wrapper">
 
-            <h2> Новый пост </h2>
+                <div class ="posts__input-inner">
 
-                <input 
-                class ="js-title-input title-input" 
-                type="text"
-                placeholder="Заголовок"
-                id="userTitleInput"
-                oninput="countCharacters()">
+                    <h2 > Новый пост </h2>
 
-                <p>Количество символов: <span id="charTitleCount">0</span></p>
+                        <input 
+                        class ="js-title-input title-input" 
+                        type="text"
+                        placeholder="Заголовок"
+                        id="userTitleInput"
+                        oninput="countCharacters()">
 
-                <textarea  
-                class = "js-desc-input desc-input" 
-                type="text"
-                placeholder="Описание"
-                id="userDescInput"
-                oninput="countCharacters()"></textarea>
+                        <p class = "desc__countCharacters"> Осталось символов: <span id="TitleCount"> 100 </span></p>
 
-                <p>Количество символов: <span id="charDescCount">0</span></p>
-                
-                                
-                <button class = "js-publication-btn publication-btn">
-                    Опубликовать
-                </button>
+                        <textarea  
+                        class = "js-desc-input desc-input" 
+                        type="text"
+                        placeholder="Описание"
+                        id="userDescInput"
+                        oninput="countCharacters()"></textarea>
 
-                <div 
-                
-                id = "validationMessage" 
-                class = "validationMessage validationMessage_hidden">
-            
+                        <p class="desc__countCharacters"> Осталось символов: <span id="DescCount"> 200 </span></p>
+                        
+                                        
+                        <button 
+                        
+                        id = "publicationBtn"
+                        class = "js-publication-btn publication-btn" disabled>
+                            Опубликовать
+                        </button>
+
+                        <div 
+                        
+                        id = "validationMessage" 
+                        class = "validationMessage validationMessage_hidden">
+                    
+                        </div>
+
                 </div>
 
-        </div>
+                    <div class ="posts__output-inner">
 
-        
-        <div class ="col">
-
-            <div class ="posts-section">
-    
-                <h2> Лента </h2>
-
-                <div class="js-posts posts">
-
-                   Лента пуста...
+                        <div class ="posts-section">
                 
-                </div>
+                            <h2> Лента </h2>
 
-            </div>
-        </div>
+                            <div class="js-posts posts">
 
-        
+                            Лента пуста...
+                            
+                            </div>
+
+                        </div>
+                    </div>
+        </div> 
 
     </div>
     
